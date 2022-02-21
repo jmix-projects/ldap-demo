@@ -8,7 +8,12 @@
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettings>
+                    <option name="generateDdlType" value="CREATE_AND_UPDATE" />
+                    <option name="supportedTypes">
+                      <option value="postgres" />
+                    </option>
+                  </DataStoreSettings>
                 </value>
               </entry>
             </map>
@@ -19,5 +24,19 @@
   </component>
   <component name="JmixGraphQLProjectSettings">
     <option name="enable" value="false" />
+  </component>
+  <component name="JmixPluginProjectSettings">
+    <option name="savedDbProperties">
+      <list>
+        <SavedDbProperties>
+          <option name="databaseName" value="l" />
+          <option name="dbType" value="hsqlfile" />
+          <option name="dbmsVersion" />
+          <option name="host" value=".jmix/hsqldb" />
+          <option name="url" value="jdbc:hsqldb:file:.jmix/hsqldb/l" />
+          <option name="user" value="sa" />
+        </SavedDbProperties>
+      </list>
+    </option>
   </component>
 </project>
