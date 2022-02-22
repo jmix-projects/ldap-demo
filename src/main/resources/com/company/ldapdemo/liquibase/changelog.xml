@@ -9,5 +9,6 @@
     <property name="uuid.type" dbms="!oracle" value="uuid"/>
 
     <includeAll path="/com/company/ldapdemo/liquibase/changelog"/>
+    <include file="/com/company/ldapdemo/liquibase/insert-roles-data.sql" />
 
 </databaseChangeLog>
