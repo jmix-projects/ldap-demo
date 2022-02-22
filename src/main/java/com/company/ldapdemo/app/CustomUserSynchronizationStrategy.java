@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component("l_CustomUserSynchronizationStrategy")
 public class CustomUserSynchronizationStrategy extends AbstractLdapUserDetailsSynchronizationStrategy<User> {
+
+    private String getFirstName(String fullName){
+        return fullName.split(" ")[0];
+    }
+
     @Override
     protected Class<User> getUserClass() {
         return User.class;
@@ -14,7 +19,8 @@ public class CustomUserSynchronizationStrategy extends AbstractLdapUserDetailsSy
 
     @Override
     protected void mapUserDetailsAttributes(User userDetails, DirContextOperations ctx) {
-        userDetails.setFirstName(ctx.getStringAttribute("givenName"));
+        userDetails.setFirstName(getFirstName(ctx.getStringAttribute("cn")));
         userDetails.setLastName(ctx.getStringAttribute("sn"));
+        userDetails.setEmail(ctx.getStringAttribute("mail"));
     }
 }
