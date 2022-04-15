@@ -8,6 +8,9 @@ This demo application demonstrates the usage of LDAP [Jmix](https://github.com/H
 
 This demo project contains configuration for test LDAP server ldap://ldap.forumsys.com:389
 
+More information about the server could be found [here](https://www.forumsys.com/2014/02/22/online-ldap-test-server/).
+
+
 User `admin` can login without LDAP authentication
 
 Available LDAP group and users: 
