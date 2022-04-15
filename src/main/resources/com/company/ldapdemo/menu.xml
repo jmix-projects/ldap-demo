@@ -4,6 +4,10 @@
     <menu id="application" caption="msg://com.company.ldapdemo/menu.application" insertBefore="administration">
         <item screen="l_User.browse" caption="msg://com.company.ldapdemo.screen.user/UserBrowse.caption"/>
         <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="l_LdapScientistsScreen"
+              caption="msg://com.company.ldapdemo.screen.ldapscientists/ldapScientistsScreen.caption"/>
+        <item screen="l_LdapMathematiciansScreen"
+              caption="msg://com.company.ldapdemo.screen.ldapmathematicians/ldapMathematiciansScreen.caption"/>
     </menu>
 
 </menu-config>
