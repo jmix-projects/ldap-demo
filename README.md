@@ -1,9 +1,7 @@
 # LDAP Jmix Addon Demo application
 
 -----
-This demo application demonstrates the usage of Jmix [LDAP add-on](https://github.com/Haulmont/jmix-ldap).
-
-Docs are placed [here](https://docs.jmix.io/jmix/ldap/index.html)
+This demo application demonstrates the usage of Jmix [LDAP add-on](https://docs.jmix.io/jmix/ldap/index.html)
 
 -----
 ## Sample data
